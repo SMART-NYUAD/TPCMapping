@@ -1,0 +1,4 @@
+service_name: pan_tilt
+position: [0.0, 0.0]
+velocity: [0.0, 0.0]
+effort: [0.0, 0.0]
