@@ -1,0 +1,11 @@
+In file included from [01m[K/home/john/Projects/PTU-Control/src/FLIR_camera/spinnaker_camera_driver/src/diagnostics.cpp:31[m[K:
+[01m[K/home/john/Projects/PTU-Control/src/FLIR_camera/spinnaker_camera_driver/include/spinnaker_camera_driver/diagnostics.h:[m[K In constructor ‘[01m[Kspinnaker_camera_driver::DiagnosticsManager::DiagnosticsManager(std::string, std::string, const std::shared_ptr<ros::Publisher>&, ros::NodeHandle&)[m[K’:
+[01m[K/home/john/Projects/PTU-Control/src/FLIR_camera/spinnaker_camera_driver/include/spinnaker_camera_driver/diagnostics.h:135:35:[m[K [01;35m[Kwarning: [m[K‘[01m[Kspinnaker_camera_driver::DiagnosticsManager::diagnostics_pub_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+  135 |   std::shared_ptr<ros::Publisher> [01;35m[Kdiagnostics_pub_[m[K;
+      |                                   [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Projects/PTU-Control/src/FLIR_camera/spinnaker_camera_driver/include/spinnaker_camera_driver/diagnostics.h:133:19:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kros::NodeHandle spinnaker_camera_driver::DiagnosticsManager::nh_[m[K’ [[01;35m[K-Wreorder[m[K]
+  133 |   ros::NodeHandle [01;35m[Knh_[m[K;
+      |                   [01;35m[K^~~[m[K
+[01m[K/home/john/Projects/PTU-Control/src/FLIR_camera/spinnaker_camera_driver/src/diagnostics.cpp:38:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+   38 | [01;35m[KDiagnosticsManager[m[K::DiagnosticsManager(const std::string name, const std::string serial,
+      | [01;35m[K^~~~~~~~~~~~~~~~~~[m[K

@@ -1,0 +1,80 @@
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target _ptu_control_generate_messages_check_deps_pan_tilt[0m
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target _ptu_control_generate_messages_check_deps_pan_tilt
+[  0%] Built target roscpp_generate_messages_cpp
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target ptu_control_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_py
+[  8%] [34m[1mGenerating EusLisp code from ptu_control/pan_tilt.srv[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  8%] Built target std_msgs_generate_messages_nodejs
+[ 16%] [34m[1mGenerating EusLisp manifest code for ptu_control[0m
+[35m[1mScanning dependencies of target ptu_control_generate_messages_py[0m
+[35m[1mScanning dependencies of target ptu_control_generate_messages_nodejs[0m
+[ 25%] [34m[1mGenerating Python code from SRV ptu_control/pan_tilt[0m
+[35m[1mScanning dependencies of target ptu_control_generate_messages_cpp[0m
+[ 33%] [34m[1mGenerating Javascript code from ptu_control/pan_tilt.srv[0m
+[ 41%] [34m[1mGenerating C++ code from ptu_control/pan_tilt.srv[0m
+[35m[1mScanning dependencies of target ptu_control_generate_messages_lisp[0m
+[ 50%] [34m[1mGenerating Lisp code from ptu_control/pan_tilt.srv[0m
+[ 50%] Built target ptu_control_generate_messages_nodejs
+[ 50%] Built target ptu_control_generate_messages_lisp
+[ 58%] [34m[1mGenerating Python srv __init__.py for ptu_control[0m
+[ 58%] Built target ptu_control_generate_messages_cpp
+[ 58%] Built target ptu_control_generate_messages_py
+[ 58%] Built target ptu_control_generate_messages_eus
+[35m[1mScanning dependencies of target pan_tilt_client[0m
+[35m[1mScanning dependencies of target ptu_control_generate_messages[0m
+[35m[1mScanning dependencies of target ptu_control_node[0m
+[ 58%] Built target ptu_control_generate_messages
+[ 66%] [32mBuilding CXX object CMakeFiles/pan_tilt_client.dir/src/pan_tilt_client.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/ptu_control_node.dir/src/ptu_control_node.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/ptu_control_node.dir/src/PTUControl.cpp.o[0m
+[ 91%] [32m[1mLinking CXX executable /home/john/Projects/PTU-Control/devel/.private/ptu_control/lib/ptu_control/pan_tilt_client[0m
+[100%] [32m[1mLinking CXX executable /home/john/Projects/PTU-Control/devel/.private/ptu_control/lib/ptu_control/ptu_control_node[0m
+[100%] Built target pan_tilt_client
+[100%] Built target ptu_control_node

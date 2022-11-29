@@ -1,0 +1,12 @@
+Symlinking /home/john/Projects/PTU-Control/devel/./setup.bash
+Symlinking /home/john/Projects/PTU-Control/devel/./local_setup.zsh
+Symlinking /home/john/Projects/PTU-Control/devel/./setup.sh
+Symlinking /home/john/Projects/PTU-Control/devel/./setup.zsh
+Symlinking /home/john/Projects/PTU-Control/devel/./env.sh
+Symlinking /home/john/Projects/PTU-Control/devel/./cmake.lock
+Symlinking /home/john/Projects/PTU-Control/devel/./local_setup.sh
+Symlinking /home/john/Projects/PTU-Control/devel/./local_setup.bash
+Symlinking /home/john/Projects/PTU-Control/devel/./_setup_util.py
+Symlinking /home/john/Projects/PTU-Control/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Symlinking /home/john/Projects/PTU-Control/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/john/Projects/PTU-Control/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake

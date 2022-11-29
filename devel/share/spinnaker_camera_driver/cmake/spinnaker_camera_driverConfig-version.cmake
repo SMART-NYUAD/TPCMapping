@@ -1,0 +1,1 @@
+/home/john/Projects/PTU-Control/devel/.private/spinnaker_camera_driver/share/spinnaker_camera_driver/cmake/spinnaker_camera_driverConfig-version.cmake

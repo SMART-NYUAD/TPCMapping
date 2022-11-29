@@ -1,0 +1,1 @@
+/home/john/Projects/PTU-Control/devel/.private/statistics_msgs/lib/pkgconfig/statistics_msgs.pc

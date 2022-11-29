@@ -1,0 +1,52 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~acquisition_frame_rate" : \b [double] User controlled acquisition frame rate in Hertz (frames per second). min: 0.0, default: 10.0, max: 120.0
+- \b "~acquisition_frame_rate_enable" : \b [bool] Enables manual (True) and automatic (False) control of the aquisition frame rate min: False, default: False, max: True
+- \b "~exposure_mode" : \b [str] Sets the operation mode of the Exposure (Timed or TriggerWidth). min: , default: Timed, max: 
+- \b "~exposure_auto" : \b [str] Sets the automatic exposure mode to: 'Off', 'Once' or 'Continuous' min: , default: Continuous, max: 
+- \b "~exposure_time" : \b [double] Exposure time in microseconds when Exposure Mode is Timed and Exposure Auto is not Continuous. min: 0.0, default: 100.0, max: 3000000.0
+- \b "~auto_exposure_time_upper_limit" : \b [double] Upper Limit on Shutter Speed. min: 0.0, default: 5000.0, max: 3000000.0
+- \b "~gain_selector" : \b [str] Selects which gain to control. The All selection is a total amplification across all channels. min: , default: All, max: 
+- \b "~auto_gain" : \b [str] Gain state control. (Off, Once, Continuous) min: , default: Continuous, max: 
+- \b "~gain" : \b [double] Controls the amplification of the video signal in dB. min: -10.0, default: 0.0, max: 30.0
+- \b "~brightness" : \b [double] Also known as Black level offset. Refers to the output of the camera when not illuminated. min: 0.0, default: 1.7, max: 10.0
+- \b "~sharpening_enable" : \b [bool] Enables/disables the sharpening feature. Sharpening is disabled by default. min: False, default: False, max: True
+- \b "~auto_sharpness" : \b [bool] Enables/disables the auto sharpening feature. min: False, default: True, max: True
+- \b "~sharpness" : \b [double] Controls the amount to sharpen a signal. min: 0.0, default: 1024.0, max: 4095.0
+- \b "~sharpening_threshold" : \b [double] Controls the minimum intensity gradient change to invoke sharpening.  min: 0.0, default: 0.1, max: 0.25
+- \b "~saturation_enable" : \b [bool] Enables/disables Saturation adjustment.. min: False, default: False, max: True
+- \b "~saturation" : \b [double] Saturation. min: 0.0, default: 100.0, max: 399.0
+- \b "~gamma_enable" : \b [bool] Enables/disables gamma correction. min: False, default: True, max: True
+- \b "~gamma" : \b [double] Controls the gamma correction of pixel intensity. min: 0.5, default: 1.0, max: 4.0
+- \b "~auto_white_balance" : \b [str] White Balance compensates for color shifts caused by different lighting conditions. min: , default: Off, max: 
+- \b "~white_balance_blue_ratio" : \b [double] White balance blue component. min: 0.0, default: 800.0, max: 1023.0
+- \b "~white_balance_red_ratio" : \b [double] White balance red component. min: 0.0, default: 550.0, max: 1023.0
+- \b "~image_format_roi_width" : \b [int] Width of the image provided by the device (in pixels). min: 0, default: 0, max: 65535
+- \b "~image_format_roi_height" : \b [int] Height of the image provided by the device (in pixels). min: 0, default: 0, max: 65535
+- \b "~image_format_x_offset" : \b [int] Horizontal offset from the origin to the ROI (in pixels). min: 0, default: 0, max: 65535
+- \b "~image_format_y_offset" : \b [int] Vertical offset from the origin to the ROI (in pixels). min: 0, default: 0, max: 65535
+- \b "~image_format_x_binning" : \b [int] Horizontal Binning. min: 1, default: 1, max: 8
+- \b "~image_format_y_binning" : \b [int] Vertical Binning. min: 1, default: 1, max: 8
+- \b "~image_format_x_decimation" : \b [int] Horizontal Decimation. min: 1, default: 1, max: 8
+- \b "~image_format_y_decimation" : \b [int] Vertical Decimation. min: 1, default: 1, max: 8
+- \b "~image_format_x_reverse" : \b [bool] Horizontal Reverse. min: False, default: False, max: True
+- \b "~image_format_y_reverse" : \b [bool] Vertical Reverse. min: False, default: False, max: True
+- \b "~image_format_color_coding" : \b [str] Image Color coding min: , default: Mono8, max: 
+- \b "~isp_enable" : \b [bool] Controls whether the image processing core is used for optional pixel format mode min: False, default: True, max: True
+- \b "~enable_trigger" : \b [str] Enable the external triggering mode. min: , default: Off, max: 
+- \b "~trigger_selector" : \b [str] Selects the type of trigger to configure. min: , default: FrameStart, max: 
+- \b "~trigger_activation_mode" : \b [str] Trigger Activiation Modes min: , default: FallingEdge, max: 
+- \b "~trigger_source" : \b [str] Trigger Sources min: , default: Line0, max: 
+- \b "~trigger_overlap_mode" : \b [str] Trigger Overlap Modes min: , default: ReadOut, max: 
+- \b "~line_source" : \b [str] Line Sources min: , default: Off, max: 
+- \b "~line_selector" : \b [str] Line Selector min: , default: Line0, max: 
+- \b "~line_mode" : \b [str] Line Mode min: , default: Input, max: 
+- \b "~auto_exposure_roi_offset_x" : \b [int] Auto exposure ROI X offset. min: 0, default: 0, max: 65535
+- \b "~auto_exposure_roi_offset_y" : \b [int] Auto exposure ROI Y offset. min: 0, default: 0, max: 65535
+- \b "~auto_exposure_roi_width" : \b [int] Auto exposure ROI width. min: 0, default: 0, max: 65535
+- \b "~auto_exposure_roi_height" : \b [int] Auto exposure ROI height. min: 0, default: 0, max: 65535
+- \b "~auto_exposure_lighting_mode" : \b [str] Auto exposure lighting mode. min: , default: Normal, max: 
+- \b "~time_offset" : \b [double] Time offset to add to image time stamps. min: -5.0, default: 0.0, max: 5.0
+

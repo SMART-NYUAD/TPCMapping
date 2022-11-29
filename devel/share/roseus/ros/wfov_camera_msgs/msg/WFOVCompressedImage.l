@@ -1,0 +1,1 @@
+/home/john/Projects/PTU-Control/devel/.private/wfov_camera_msgs/share/roseus/ros/wfov_camera_msgs/msg/WFOVCompressedImage.l

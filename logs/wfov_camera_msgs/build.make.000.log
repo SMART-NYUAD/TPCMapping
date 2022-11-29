@@ -1,0 +1,45 @@
+[35m[1mScanning dependencies of target _wfov_camera_msgs_generate_messages_check_deps_WFOVImage[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target _wfov_camera_msgs_generate_messages_check_deps_WFOVTrigger[0m
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target _wfov_camera_msgs_generate_messages_check_deps_WFOVCompressedImage[0m
+[  0%] Built target _wfov_camera_msgs_generate_messages_check_deps_WFOVImage
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[  0%] Built target _wfov_camera_msgs_generate_messages_check_deps_WFOVTrigger
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[  0%] Built target sensor_msgs_generate_messages_py
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[  0%] Built target _wfov_camera_msgs_generate_messages_check_deps_WFOVCompressedImage
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target wfov_camera_msgs_generate_messages_cpp[0m
+[  5%] [34m[1mGenerating C++ code from wfov_camera_msgs/WFOVCompressedImage.msg[0m
+[ 11%] [34m[1mGenerating C++ code from wfov_camera_msgs/WFOVImage.msg[0m
+[35m[1mScanning dependencies of target wfov_camera_msgs_generate_messages_py[0m
+[ 17%] [34m[1mGenerating Python from MSG wfov_camera_msgs/WFOVCompressedImage[0m
+[35m[1mScanning dependencies of target wfov_camera_msgs_generate_messages_nodejs[0m
+[ 23%] [34m[1mGenerating Javascript code from wfov_camera_msgs/WFOVCompressedImage.msg[0m
+[ 29%] [34m[1mGenerating Javascript code from wfov_camera_msgs/WFOVImage.msg[0m
+[ 35%] [34m[1mGenerating Javascript code from wfov_camera_msgs/WFOVTrigger.msg[0m
+[35m[1mScanning dependencies of target wfov_camera_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target wfov_camera_msgs_generate_messages_lisp[0m
+[ 41%] [34m[1mGenerating EusLisp code from wfov_camera_msgs/WFOVCompressedImage.msg[0m
+[ 47%] [34m[1mGenerating Lisp code from wfov_camera_msgs/WFOVCompressedImage.msg[0m
+[ 52%] [34m[1mGenerating Python from MSG wfov_camera_msgs/WFOVImage[0m
+[ 52%] Built target wfov_camera_msgs_generate_messages_nodejs
+[ 64%] [34m[1mGenerating C++ code from wfov_camera_msgs/WFOVTrigger.msg[0m
+[ 64%] [34m[1mGenerating Lisp code from wfov_camera_msgs/WFOVImage.msg[0m
+[ 70%] [34m[1mGenerating Lisp code from wfov_camera_msgs/WFOVTrigger.msg[0m
+[ 76%] [34m[1mGenerating Python from MSG wfov_camera_msgs/WFOVTrigger[0m
+[ 82%] [34m[1mGenerating EusLisp code from wfov_camera_msgs/WFOVImage.msg[0m
+[ 88%] [34m[1mGenerating EusLisp code from wfov_camera_msgs/WFOVTrigger.msg[0m
+[ 94%] [34m[1mGenerating EusLisp manifest code for wfov_camera_msgs[0m
+[ 94%] Built target wfov_camera_msgs_generate_messages_lisp
+[ 94%] Built target wfov_camera_msgs_generate_messages_cpp
+[100%] [34m[1mGenerating Python msg __init__.py for wfov_camera_msgs[0m
+[100%] Built target wfov_camera_msgs_generate_messages_py
+[100%] Built target wfov_camera_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target wfov_camera_msgs_generate_messages[0m
+[100%] Built target wfov_camera_msgs_generate_messages

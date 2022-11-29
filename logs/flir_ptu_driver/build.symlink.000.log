@@ -1,0 +1,5 @@
+Symlinking /home/john/Projects/PTU-Control/devel/lib/libflir_ptu_driver.so
+Symlinking /home/john/Projects/PTU-Control/devel/lib/flir_ptu_driver/ptu_node
+Symlinking /home/john/Projects/PTU-Control/devel/lib/pkgconfig/flir_ptu_driver.pc
+Symlinking /home/john/Projects/PTU-Control/devel/share/flir_ptu_driver/cmake/flir_ptu_driverConfig-version.cmake
+Symlinking /home/john/Projects/PTU-Control/devel/share/flir_ptu_driver/cmake/flir_ptu_driverConfig.cmake

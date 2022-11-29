@@ -1,0 +1,8 @@
+prefix=/home/john/Projects/PTU-Control/install
+
+Name: flir_camera_description
+Description: Description of flir_camera_description
+Version: 0.1.4
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

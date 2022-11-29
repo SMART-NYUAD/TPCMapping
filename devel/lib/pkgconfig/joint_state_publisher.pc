@@ -1,0 +1,1 @@
+/home/john/Projects/PTU-Control/devel/.private/joint_state_publisher/lib/pkgconfig/joint_state_publisher.pc

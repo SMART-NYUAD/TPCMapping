@@ -1,0 +1,1 @@
+/home/john/Projects/PTU-Control/devel/.private/image_exposure_msgs/share/image_exposure_msgs/cmake/image_exposure_msgsConfig-version.cmake

@@ -1,0 +1,78 @@
+CMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/test/tests.cmake:174 (add_dependencies):
+  Policy CMP0046 is not set: Error on non-existent dependency in
+  add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+
+  The dependency target "rviz" of target
+  "run_tests_flir_ptu_viz_roslaunch-check_launch_view_ptu.launch" does not
+  exist.
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/roslaunch/cmake/roslaunch-extras.cmake:66 (catkin_run_tests_target)
+  CMakeLists.txt:9 (roslaunch_add_file_check)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/test/tests.cmake:190 (add_dependencies):
+  Policy CMP0046 is not set: Error on non-existent dependency in
+  add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+
+  The dependency target "flir_ptu_example_urdf" of target
+  "_run_tests_flir_ptu_viz_roslaunch-check_launch_view_model.launch" does not
+  exist.
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/roslaunch/cmake/roslaunch-extras.cmake:66 (catkin_run_tests_target)
+  CMakeLists.txt:7 (roslaunch_add_file_check)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/test/tests.cmake:190 (add_dependencies):
+  Policy CMP0046 is not set: Error on non-existent dependency in
+  add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+
+  The dependency target "robot_state_publisher" of target
+  "_run_tests_flir_ptu_viz_roslaunch-check_launch_view_model.launch" does not
+  exist.
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/roslaunch/cmake/roslaunch-extras.cmake:66 (catkin_run_tests_target)
+  CMakeLists.txt:7 (roslaunch_add_file_check)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/test/tests.cmake:190 (add_dependencies):
+  Policy CMP0046 is not set: Error on non-existent dependency in
+  add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+
+  The dependency target "rviz" of target
+  "_run_tests_flir_ptu_viz_roslaunch-check_launch_view_ptu.launch" does not
+  exist.
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/roslaunch/cmake/roslaunch-extras.cmake:66 (catkin_run_tests_target)
+  CMakeLists.txt:9 (roslaunch_add_file_check)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/test/tests.cmake:174 (add_dependencies):
+  Policy CMP0046 is not set: Error on non-existent dependency in
+  add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+
+  The dependency target "flir_ptu_example_urdf" of target
+  "run_tests_flir_ptu_viz_roslaunch-check_launch_view_model.launch" does not
+  exist.
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/roslaunch/cmake/roslaunch-extras.cmake:66 (catkin_run_tests_target)
+  CMakeLists.txt:7 (roslaunch_add_file_check)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/test/tests.cmake:174 (add_dependencies):
+  Policy CMP0046 is not set: Error on non-existent dependency in
+  add_dependencies.  Run "cmake --help-policy CMP0046" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+
+  The dependency target "robot_state_publisher" of target
+  "run_tests_flir_ptu_viz_roslaunch-check_launch_view_model.launch" does not
+  exist.
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/roslaunch/cmake/roslaunch-extras.cmake:66 (catkin_run_tests_target)
+  CMakeLists.txt:7 (roslaunch_add_file_check)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
