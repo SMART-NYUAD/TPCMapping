@@ -1,6 +1,0 @@
-Symlinking /home/john/Projects/PTU-Control/devel/lib/joint_state_publisher/joint_state_publisher
-Symlinking /home/john/Projects/PTU-Control/devel/lib/joint_state_publisher/cmake.lock
-Symlinking /home/john/Projects/PTU-Control/devel/lib/pkgconfig/joint_state_publisher.pc
-Symlinking /home/john/Projects/PTU-Control/devel/lib/python3/dist-packages/joint_state_publisher/__init__.py
-Symlinking /home/john/Projects/PTU-Control/devel/share/joint_state_publisher/cmake/joint_state_publisherConfig-version.cmake
-Symlinking /home/john/Projects/PTU-Control/devel/share/joint_state_publisher/cmake/joint_state_publisherConfig.cmake

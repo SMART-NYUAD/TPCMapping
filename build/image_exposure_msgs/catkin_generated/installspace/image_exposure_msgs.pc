@@ -1,8 +1,0 @@
-prefix=/home/john/Projects/PTU-Control/install
-
-Name: image_exposure_msgs
-Description: Description of image_exposure_msgs
-Version: 0.15.1
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime statistics_msgs std_msgs

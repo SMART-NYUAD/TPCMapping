@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/flir_camera_description/share/flir_camera_description/cmake/flir_camera_descriptionConfig-version.cmake

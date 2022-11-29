@@ -1,8 +1,0 @@
-prefix=/home/john/Projects/PTU-Control/install
-
-Name: flir_ptu_driver
-Description: Description of flir_ptu_driver
-Version: 0.2.1
-Cflags: 
-Libs: -L${prefix}/lib -lflir_ptu_driver
-Requires: sensor_msgs serial

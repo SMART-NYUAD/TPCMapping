@@ -1,8 +1,0 @@
-prefix=/home/john/Projects/PTU-Control/install
-
-Name: ptu_control
-Description: Description of ptu_control
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lptu_control
-Requires: roscpp sensor_msgs

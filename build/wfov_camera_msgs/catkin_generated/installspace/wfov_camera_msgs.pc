@@ -1,8 +1,0 @@
-prefix=/home/john/Projects/PTU-Control/install
-
-Name: wfov_camera_msgs
-Description: Description of wfov_camera_msgs
-Version: 0.15.1
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime sensor_msgs

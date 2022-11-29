@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/image_exposure_msgs/share/roseus/ros/image_exposure_msgs/msg/ExposureSequence.l

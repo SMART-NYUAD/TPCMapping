@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/wfov_camera_msgs/share/gennodejs/ros/wfov_camera_msgs/msg/_index.js

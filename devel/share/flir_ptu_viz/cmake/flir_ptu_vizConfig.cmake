@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/flir_ptu_viz/share/flir_ptu_viz/cmake/flir_ptu_vizConfig.cmake

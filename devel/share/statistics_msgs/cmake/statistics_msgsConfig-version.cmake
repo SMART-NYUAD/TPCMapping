@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/statistics_msgs/share/statistics_msgs/cmake/statistics_msgsConfig-version.cmake

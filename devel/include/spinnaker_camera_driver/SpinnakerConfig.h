@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/spinnaker_camera_driver/include/spinnaker_camera_driver/SpinnakerConfig.h

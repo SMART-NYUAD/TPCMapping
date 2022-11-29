@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/statistics_msgs/share/gennodejs/ros/statistics_msgs/msg/_index.js

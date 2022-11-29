@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/ptu_control/share/gennodejs/ros/ptu_control/srv/_index.js

@@ -1,6 +1,0 @@
-[35m[1mScanning dependencies of target flir_ptu_description_xacro_generated_to_devel_space_[0m
-[35m[1mScanning dependencies of target flir_ptu_example_urdf[0m
-[  0%] Built target flir_ptu_description_xacro_generated_to_devel_space_
-[100%] [34m[1mxacro: generating /home/john/Projects/PTU-Control/devel/.private/flir_ptu_description/share/flir_ptu_description/urdf/example.urdf from /home/john/Projects/PTU-Control/src/flir_ptu/flir_ptu_description/urdf/example.urdf.xacro[0m
-
-[100%] Built target flir_ptu_example_urdf

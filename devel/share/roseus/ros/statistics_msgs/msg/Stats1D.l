@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/statistics_msgs/share/roseus/ros/statistics_msgs/msg/Stats1D.l

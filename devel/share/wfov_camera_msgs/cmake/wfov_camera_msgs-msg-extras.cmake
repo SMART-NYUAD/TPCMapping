@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/wfov_camera_msgs/share/wfov_camera_msgs/cmake/wfov_camera_msgs-msg-extras.cmake

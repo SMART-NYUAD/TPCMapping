@@ -42,8 +42,6 @@ include_directories(SYSTEM
                     ${catkin_INCLUDE_DIRS})
 include_directories(include)
 
-include_directories(/opt/spinnaker/include/)
-
 add_library(SpinnakerCameraLib src/SpinnakerCamera.cpp)
 
 # Include the Spinnaker Libs

@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/spinnaker_camera_driver/lib/python3/dist-packages/spinnaker_camera_driver/cfg/SpinnakerConfig.py

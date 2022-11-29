@@ -1,8 +1,0 @@
-prefix=/home/john/Projects/PTU-Control/devel/.private/joint_state_publisher
-
-Name: joint_state_publisher
-Description: Description of joint_state_publisher
-Version: 1.15.1
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

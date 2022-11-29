@@ -1,6 +1,0 @@
-devel_space: /home/john/Projects/PTU-Control/devel
-install: false
-install_space: /home/john/Projects/PTU-Control/install
-profile: default
-source_space: /home/john/Projects/PTU-Control/src
-workspace: /home/john/Projects/PTU-Control

@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/flir_ptu_driver/lib/pkgconfig/flir_ptu_driver.pc

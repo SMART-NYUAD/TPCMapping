@@ -1,1 +1,0 @@
-/home/john/Projects/PTU-Control/devel/.private/wfov_camera_msgs/lib/pkgconfig/wfov_camera_msgs.pc
