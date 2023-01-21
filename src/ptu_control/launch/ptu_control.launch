@@ -19,5 +19,7 @@
 	<include file="$(find flir_ptu_ethernet)/launch/flir_ptu_ethernet.launch">
 		<arg name="ip_address" value="169.254.255.1"/>
 	</include>
+
+	<node name="GUI" pkg="rqt_gui" type="rqt_gui" output="screen" args="--perspective-file $(find ptu_control)/rqt/PositionControls.perspective"/>
 	
 </launch>

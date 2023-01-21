@@ -4,6 +4,7 @@
 
 #include <vector>
 #include <string.h>
+#include <math.h>
 
 #include "ptu_control/pan_tilt.h"
 
@@ -18,10 +19,9 @@ namespace ptu_control
         
         private:
         ros::NodeHandle nodeHandle_;
-        // ros::Publisher modifiedJointStatePublisher_;
-        // ros::Subscriber modifiedJointStateSubscriber_;
-        // ros::Publisher jointStatePublisher_;
         ros::ServiceServer panTiltServer_;
+
+        ros::Subscriber jointStateSubscriber_;
 
         ros::Publisher panPositionPublisher_;
         ros::Publisher tiltPositionPublisher_;
