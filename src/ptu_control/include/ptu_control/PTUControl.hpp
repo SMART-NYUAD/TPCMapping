@@ -1,5 +1,6 @@
 #include <ros/ros.h>
 #include <sensor_msgs/JointState.h>
+#include <std_msgs/Float64.h>
 
 #include <vector>
 #include <string.h>
@@ -17,10 +18,15 @@ namespace ptu_control
         
         private:
         ros::NodeHandle nodeHandle_;
-        ros::Publisher modifiedJointStatePublisher_;
-        ros::Subscriber modifiedJointStateSubscriber_;
-        ros::Publisher jointStatePublisher_;
+        // ros::Publisher modifiedJointStatePublisher_;
+        // ros::Subscriber modifiedJointStateSubscriber_;
+        // ros::Publisher jointStatePublisher_;
         ros::ServiceServer panTiltServer_;
+
+        ros::Publisher panPositionPublisher_;
+        ros::Publisher tiltPositionPublisher_;
+        ros::Publisher panVelocityPublisher_;
+        ros::Publisher tiltVelocityPublisher_;
 
         std::string serviceName_;
         sensor_msgs::JointState jointState_;

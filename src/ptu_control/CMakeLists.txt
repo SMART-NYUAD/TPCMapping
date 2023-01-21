@@ -10,6 +10,7 @@ add_compile_options(-std=c++11)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
+  std_msgs
   message_generation
 )
 
@@ -70,6 +71,7 @@ add_service_files(
 generate_messages(
   DEPENDENCIES
   sensor_msgs
+  std_msgs
 )
 
 ################################################

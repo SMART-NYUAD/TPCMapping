@@ -6,8 +6,10 @@ from rcomponent.rcomponent import *
 
 # Insert here general imports:
 import math
-import urllib.parse as urllib
-import urllib.request as urllib2
+# import urllib.parse as urllib
+# import urllib.request as urllib2
+import urllib
+import urllib2
 import json
 
 # Insert here msg and srv imports:

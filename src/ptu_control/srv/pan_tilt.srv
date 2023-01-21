@@ -1,5 +1,8 @@
-float64[] position
-float64[] velocity
-float64[] effort
+float64 pan
+float64 tilt
+float64 panVelocity
+float64 tiltVelocity
+float64 panEffort
+float64 tiltEffort
 ---
 bool success
