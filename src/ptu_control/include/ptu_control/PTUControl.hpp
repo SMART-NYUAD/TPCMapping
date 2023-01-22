@@ -24,6 +24,7 @@ namespace ptu_control
         ros::ServiceServer panTiltServer_;
 
         ros::Subscriber stateSubscriber_;
+        ros::Subscriber jointStateSubscriber_;
 
         ros::Publisher panPositionPublisher_;
         ros::Publisher tiltPositionPublisher_;
@@ -42,9 +43,9 @@ namespace ptu_control
 
         bool panTiltCallback(ptu_control::pan_tilt::Request &req, ptu_control::pan_tilt::Response &res);
 
-        // void subscriberCallback(const sensor_msgs::JointState::ConstPtr &msg);
+        void jointStateCallback(const sensor_msgs::JointState::ConstPtr &msg);
 
-        void subscriberCallback(const robotnik_msgs::PantiltStatus::ConstPtr &msg);
+        void stateCallback(const robotnik_msgs::PantiltStatus::ConstPtr &msg);
 
 
     };

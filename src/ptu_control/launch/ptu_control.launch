@@ -4,7 +4,7 @@
 	<param name="use_gui" value="True"/>
 	<!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/> -->
 	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
-	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find flir_ptu_viz)/rviz/urdf.rviz" required="true" />
+	<!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find flir_ptu_viz)/rviz/urdf.rviz" required="true" /> -->
 
 	<remap from="joint_pan_position_controller/command" to="pan_position"/>
 	<remap from="joint_tilt_position_controller/command" to="tilt_position"/>
@@ -17,6 +17,8 @@
 
 	<!-- <remap from="joint_states" to="modified_joint_states"/> -->
 
+
+	<remap from="joint_states" to="raw_joint_states"/>
 	<include file="$(find flir_ptu_ethernet)/launch/flir_ptu_ethernet.launch">
 		<arg name="ip_address" value="169.254.255.1"/>
 	</include>
