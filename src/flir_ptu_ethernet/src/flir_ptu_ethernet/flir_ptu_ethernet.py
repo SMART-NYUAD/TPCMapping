@@ -130,8 +130,10 @@ class FlirPtuEthernet(RComponent):
 
         joint_state_msg = JointState()
         joint_state_msg.header.stamp = rospy.Time.now()
-        joint_state_msg.name.append("robot_flir_ptu_5_pan_joint")
-        joint_state_msg.name.append("robot_flir_ptu_5_tilt_joint")
+        # joint_state_msg.name.append("robot_flir_ptu_5_pan_joint")
+        # joint_state_msg.name.append("robot_flir_ptu_5_tilt_joint")
+        joint_state_msg.name.append("ptu_pan")
+        joint_state_msg.name.append("ptu_tilt")
         joint_state_msg.position.append(self.pan_pos*math.pi/180.0)
         joint_state_msg.position.append(self.tilt_pos*math.pi/180.0)
         joint_state_msg.velocity.append(self.pan_speed*math.pi/180.0)

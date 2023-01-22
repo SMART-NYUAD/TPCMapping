@@ -1,4 +1,6 @@
 float64 pan
 float64 tilt
+float64 max_pan_speed
+float64 max_tilt_speed
 ---
 bool success

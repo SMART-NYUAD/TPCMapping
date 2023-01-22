@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
   std_msgs
+  robotnik_msgs
   message_generation
 )
 
@@ -72,6 +73,7 @@ generate_messages(
   DEPENDENCIES
   sensor_msgs
   std_msgs
+  robotnik_msgs
 )
 
 ################################################

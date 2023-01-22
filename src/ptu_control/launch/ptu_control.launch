@@ -1,20 +1,21 @@
 <launch>
+	<!-- <remap from="joint_states" to="dummy"/> -->
+	<param name="robot_description" textfile="$(find flir_ptu_description)/urdf/example.urdf" />
+	<param name="use_gui" value="True"/>
+	<!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/> -->
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find flir_ptu_viz)/rviz/urdf.rviz" required="true" />
+
 	<remap from="joint_pan_position_controller/command" to="pan_position"/>
 	<remap from="joint_tilt_position_controller/command" to="tilt_position"/>
 	<remap from="joint_pan_speed_controller/command" to="pan_velocity"/>
 	<remap from="joint_tilt_speed_controller/command" to="tilt_velocity"/>
 
-	<!-- <param name="robot_description" textfile="$(find flir_ptu_description)/urdf/example.urdf" />
-	<param name="use_gui" value="True"/> -->
-	<!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-		<remap from="joint_states" to="modified_joint_states"/>
-	</node> -->
-	<!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> -->
-	<!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find flir_ptu_viz)/rviz/urdf.rviz" required="true" /> -->
-
 	<node name="ptu_control_node" type="ptu_control_node" pkg="ptu_control" output="screen">
 		<rosparam command="load" file="$(find ptu_control)/config/config.yaml"/>
 	</node>
+
+	<!-- <remap from="joint_states" to="modified_joint_states"/> -->
 
 	<include file="$(find flir_ptu_ethernet)/launch/flir_ptu_ethernet.launch">
 		<arg name="ip_address" value="169.254.255.1"/>
