@@ -1,6 +1,6 @@
 service_name: pan_tilt
 position: [0.0, 0.0]
-velocity: [0.0, 0.0]
+velocity: [10.0, 10.0]
 effort: [0.0, 0.0]
 pan_min: -150
 pan_max: 150

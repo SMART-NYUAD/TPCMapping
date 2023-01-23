@@ -29,8 +29,19 @@ namespace ptu_control
 
         panSpeedSetter_ = nodeHandle_.serviceClient<robotnik_msgs::set_float_value>("/flir_ptu_ethernet/set_max_pan_speed");
         tiltSpeedSetter_ = nodeHandle_.serviceClient<robotnik_msgs::set_float_value>("/flir_ptu_ethernet/set_max_tilt_speed");
+        
 
         ROS_INFO("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+
+        ptu_control::pan_tilt service;
+        service.request.pan = jointState_.position[0];
+        service.request.tilt = jointState_.position[1];
+        service.request.max_pan_speed = jointState_.velocity[0];
+        service.request.max_tilt_speed = jointState_.velocity[1];
+
+        ros::Duration(1.5).sleep();
+
+        PTUControl::panTiltCallback(service.request, service.response);
 
     }
 
@@ -116,9 +127,9 @@ namespace ptu_control
         }
 
         std_msgs::Float64 panMsg;
-        panMsg.data = -1 * pan * M_PI/360;
+        panMsg.data = -1 * (pan - panCalibration_) * M_PI/360;
         std_msgs::Float64 tiltMsg;
-        tiltMsg.data = -1 * tilt * M_PI/180;
+        tiltMsg.data = -1 * (tilt - tiltCalibration_) * M_PI/180;
 
         // ROS_INFO("Moving to %0.2f %0.2f", pan.data, tilt.data);
         panPositionPublisher_.publish(panMsg);
@@ -140,7 +151,9 @@ namespace ptu_control
         fixedState.name.push_back("ptu_pan");
         fixedState.name.push_back("ptu_tilt");
 
-        fixedState.position[0] = fixedState.position[0] * 2;
+        fixedState.position[0] = fixedState.position[0] * 2 + panCalibration_ * M_PI/180;
+        fixedState.position[1] = fixedState.position[1] + tiltCalibration_ * M_PI/180;
+
         fixedState.velocity[0] = fixedState.velocity[0] * 2;
 
         jointStatePublisher_.publish(fixedState);
