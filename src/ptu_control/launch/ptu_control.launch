@@ -20,7 +20,13 @@
 
 	<remap from="joint_states" to="raw_joint_states"/>
 	<include file="$(find flir_ptu_ethernet)/launch/flir_ptu_ethernet.launch">
-		<arg name="ip_address" value="169.254.255.1"/>
+		<arg name="ip_address" value="169.254.255.2"/>
+	</include>
+
+	<include file="$(find spinnaker_camera_driver)/launch/camera.launch">
+		<arg name="camera_serial" value="75003539"/>
+		<arg name="device_type" value="GigE"/>
+		<arg name="encoding" value="Mono8"/>
 	</include>
 
 	<node name="GUI" pkg="rqt_gui" type="rqt_gui" output="screen" args="--perspective-file $(find ptu_control)/rqt/PositionControls.perspective"/>
