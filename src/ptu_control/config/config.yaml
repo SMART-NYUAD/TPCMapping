@@ -2,3 +2,11 @@ service_name: pan_tilt
 position: [0.0, 0.0]
 velocity: [0.0, 0.0]
 effort: [0.0, 0.0]
+pan_min: -150
+pan_max: 150
+tilt_min: -45
+tilt_max: 30
+pan_speed_limit: 130
+tilt_speed_limit: 30
+pan_calibration: 2
+tilt_calibration: 0

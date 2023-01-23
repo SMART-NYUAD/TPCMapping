@@ -38,6 +38,15 @@ namespace ptu_control
         sensor_msgs::JointState jointState_;
         ros::Publisher jointStatePublisher_;
         int seq_;
+
+        double panMin_;
+        double panMax_;
+        double tiltMin_;
+        double tiltMax_;
+        double panSpeedLimit_;
+        double tiltSpeedLimit_;
+        double panCalibration_;
+        double tiltCalibration_;
         
         bool loadParam();
 

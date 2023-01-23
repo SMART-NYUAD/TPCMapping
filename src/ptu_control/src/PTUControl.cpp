@@ -30,6 +30,8 @@ namespace ptu_control
         panSpeedSetter_ = nodeHandle_.serviceClient<robotnik_msgs::set_float_value>("/flir_ptu_ethernet/set_max_pan_speed");
         tiltSpeedSetter_ = nodeHandle_.serviceClient<robotnik_msgs::set_float_value>("/flir_ptu_ethernet/set_max_tilt_speed");
 
+        ROS_INFO("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+
     }
 
     PTUControl::~PTUControl(){}
@@ -42,6 +44,15 @@ namespace ptu_control
         success &= nodeHandle_.getParam("/ptu_control_node/velocity", jointState_.velocity);
         success &= nodeHandle_.getParam("/ptu_control_node/effort", jointState_.effort);
 
+        success &= nodeHandle_.getParam("/ptu_control_node/pan_min", panMin_);
+        success &= nodeHandle_.getParam("/ptu_control_node/pan_max", panMax_);
+        success &= nodeHandle_.getParam("/ptu_control_node/tilt_min", tiltMin_);
+        success &= nodeHandle_.getParam("/ptu_control_node/tilt_max", tiltMax_);
+        success &= nodeHandle_.getParam("/ptu_control_node/pan_speed_limit", panSpeedLimit_);
+        success &= nodeHandle_.getParam("/ptu_control_node/tilt_speed_limit", tiltSpeedLimit_);
+        success &= nodeHandle_.getParam("/ptu_control_node/pan_calibration", panCalibration_);
+        success &= nodeHandle_.getParam("/ptu_control_node/tilt_calibration", tiltCalibration_);
+
         jointState_.name = {"ptu_pan", "ptu_tilt"}; 
 
         jointState_.header.frame_id = "";
@@ -53,16 +64,50 @@ namespace ptu_control
 
     bool PTUControl::panTiltCallback(ptu_control::pan_tilt::Request &req, ptu_control::pan_tilt::Response &res)
     {
-        robotnik_msgs::set_float_value maxPanSpeed;
-        maxPanSpeed.request.value = req.max_pan_speed / 2;
+        double pan = req.pan;
+        double tilt = req.tilt;
+        double maxPanSpeed = req.max_pan_speed;
+        double maxTiltSpeed = req.max_tilt_speed;
 
-        robotnik_msgs::set_float_value maxTiltSpeed;
-        maxTiltSpeed.request.value = req.max_tilt_speed;
+        if (pan < panMin_ || pan > panMax_)
+        {
+            ROS_WARN("Pan angle out of range.\n");
+            ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+            res.success = false;
+            return false;
+        }
+        else if (tilt < tiltMin_ || tilt > tiltMax_)
+        {
+            ROS_WARN("Tilt angle out of range.\n");
+            ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+            res.success = false;
+            return false;
+        }
+        else if (maxPanSpeed < 0 || maxPanSpeed > panSpeedLimit_)
+        {
+            ROS_WARN("Pan speed out of range.\n");
+            ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+            res.success = false;
+            return false;
+        }
+        else if (maxTiltSpeed < 0 || maxTiltSpeed > tiltSpeedLimit_)
+        {
+            ROS_WARN("Tilt speed limit out of range.\n");
+            ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+            res.success = false;
+            return false;
+        }
+
+        robotnik_msgs::set_float_value maxPanSpeedMsg;
+        maxPanSpeedMsg.request.value = maxPanSpeed / 2;
+
+        robotnik_msgs::set_float_value maxTiltSpeedMsg;
+        maxTiltSpeedMsg.request.value = maxTiltSpeed;
 
         bool success = true;
 
-        success &= panSpeedSetter_.call(maxPanSpeed);
-        success &= tiltSpeedSetter_.call(maxTiltSpeed);
+        success &= panSpeedSetter_.call(maxPanSpeedMsg);
+        success &= tiltSpeedSetter_.call(maxTiltSpeedMsg);
 
         if (!success)
         {
@@ -70,14 +115,16 @@ namespace ptu_control
             return false;
         }
 
-        std_msgs::Float64 pan;
-        pan.data = -1 * req.pan * M_PI/360;
-        std_msgs::Float64 tilt;
-        tilt.data = -1 * req.tilt * M_PI/180;
+        std_msgs::Float64 panMsg;
+        panMsg.data = -1 * pan * M_PI/360;
+        std_msgs::Float64 tiltMsg;
+        tiltMsg.data = -1 * tilt * M_PI/180;
 
         // ROS_INFO("Moving to %0.2f %0.2f", pan.data, tilt.data);
-        panPositionPublisher_.publish(pan);
-        tiltPositionPublisher_.publish(tilt);
+        panPositionPublisher_.publish(panMsg);
+        tiltPositionPublisher_.publish(tiltMsg);
+
+        ROS_INFO("\nService called\n------------------\nPan: %0.2f, Tilt: %0.2f\nPan Speed; %0.2f, Tilt Speed: %0.2f\n------------------\n", pan, tilt, maxPanSpeed, maxTiltSpeed);
     
         res.success = true;
         return true;
