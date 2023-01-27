@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find spinnaker_camera_driver)/launch/camera.launch">
+		<arg name="camera_serial" value="75003539"/>
+		<arg name="device_type" value="GigE"/>
+		<arg name="encoding" value="Mono8"/>
+	</include>
+
+	<node name="GUI" pkg="rqt_gui" type="rqt_gui" output="screen" args="--perspective-file $(find ptu_control)/rqt/camera.perspective"/>
+</launch>

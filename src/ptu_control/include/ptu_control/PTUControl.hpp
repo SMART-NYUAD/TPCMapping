@@ -23,8 +23,11 @@ namespace ptu_control
         ros::NodeHandle nodeHandle_;
         ros::ServiceServer panTiltServer_;
 
-        ros::Subscriber stateSubscriber_;
+        sensor_msgs::JointState jointState_;
+        ros::Publisher jointStatePublisher_;
         ros::Subscriber jointStateSubscriber_;
+
+        ros::Publisher statusPublisher_;
 
         ros::Publisher panPositionPublisher_;
         ros::Publisher tiltPositionPublisher_;
@@ -35,8 +38,7 @@ namespace ptu_control
         ros::ServiceClient tiltSpeedSetter_;
 
         std::string serviceName_;
-        sensor_msgs::JointState jointState_;
-        ros::Publisher jointStatePublisher_;
+
         int seq_;
 
         double panMin_;
@@ -53,9 +55,6 @@ namespace ptu_control
         bool panTiltCallback(ptu_control::pan_tilt::Request &req, ptu_control::pan_tilt::Response &res);
 
         void jointStateCallback(const sensor_msgs::JointState::ConstPtr &msg);
-
-        void stateCallback(const robotnik_msgs::PantiltStatus::ConstPtr &msg);
-
 
     };
 }

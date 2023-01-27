@@ -1,4 +1,3 @@
-
 #include <ros/ros.h>
 #include "ptu_control/PTUControl.hpp"
 
@@ -16,16 +15,18 @@ namespace ptu_control
         panTiltServer_ = nodeHandle_.advertiseService(serviceName_, &PTUControl::panTiltCallback, this);
         ROS_INFO("Service Ready");
 
-        stateSubscriber_ = nodeHandle_.subscribe("flir_ptu_ethernet/status", 1, &PTUControl::stateCallback, this);
-
         jointStateSubscriber_ = nodeHandle_.subscribe("raw_joint_states", 1, &PTUControl::jointStateCallback, this);
 
         jointStatePublisher_ = nodeHandle_.advertise<sensor_msgs::JointState>("joint_states", 1);
 
+        statusPublisher_ = nodeHandle_.advertise<robotnik_msgs::PantiltStatus>("status", 1);
+
         panPositionPublisher_ = nodeHandle_.advertise<std_msgs::Float64>("pan_position", 1, true);
         tiltPositionPublisher_ = nodeHandle_.advertise<std_msgs::Float64>("tilt_position", 1, true);
-        panVelocityPublisher_ = nodeHandle_.advertise<std_msgs::Float64>("pan_speed", 1, true);
-        tiltVelocityPublisher_ = nodeHandle_.advertise<std_msgs::Float64>("tilt_speed", 1, true);
+
+        //The below velocity publishers are unimplemented but available functionality. 
+        panVelocityPublisher_ = nodeHandle_.advertise<std_msgs::Float64>("pan_velocity", 1, true);
+        tiltVelocityPublisher_ = nodeHandle_.advertise<std_msgs::Float64>("tilt_velocity", 1, true);
 
         panSpeedSetter_ = nodeHandle_.serviceClient<robotnik_msgs::set_float_value>("/flir_ptu_ethernet/set_max_pan_speed");
         tiltSpeedSetter_ = nodeHandle_.serviceClient<robotnik_msgs::set_float_value>("/flir_ptu_ethernet/set_max_tilt_speed");
@@ -163,22 +164,14 @@ namespace ptu_control
         double panSpeed = fixedState.velocity[0] * 180/M_PI;
         double tiltSpeed = fixedState.velocity[1] * 180/M_PI;
 
-        ROS_DEBUG("\nPan: %0.2f, Tilt: %0.2f\nPan Speed; %0.2f, Tilt Speed: %0.2f\n", pan, tilt, panSpeed, tiltSpeed);
+        robotnik_msgs::PantiltStatus status;
+        status.pan_pos = pan;
+        status.tilt_pos = tilt;
+        status.pan_speed = panSpeed;
+        status.tilt_speed = tiltSpeed;
+
+        // ROS_DEBUG("\nPan: %0.2f, Tilt: %0.2f\nPan Speed; %0.2f, Tilt Speed: %0.2f\n", pan, tilt, panSpeed, tiltSpeed);
+        statusPublisher_.publish(status);
 
     }
-
-    void PTUControl::stateCallback(const robotnik_msgs::PantiltStatus::ConstPtr &msg)
-    {
-        // ROS_DEBUG("Pan: %0.3f, Tilt: %0.3f", msg->position[0], msg->position[1]);
-        // ROS_DEBUG("\nPan: %0.2f, Tilt: %0.2f\nPan Speed: %0.2f, Tilt Speed: %0.2f\n", msg->pan_pos, msg->tilt_pos, msg->pan_speed, msg->tilt_speed);
-
-        // double maxPanSpeed;
-
-        // nodeHandle_.getParam("/flir_ptu_ethernet/max_pan_speed", maxPanSpeed);
-        
-        // ROS_DEBUG_STREAM(maxPanSpeed);
-
-    }
-
-
 }
