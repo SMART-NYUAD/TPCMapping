@@ -11,7 +11,7 @@ namespace ptu_control
             ROS_ERROR("Could not load parameters");
             ros::shutdown();
         }
-
+        
         panTiltServer_ = nodeHandle_.advertiseService(serviceName_, &PTUControl::panTiltCallback, this);
         ROS_INFO("Service Ready");
 
@@ -32,7 +32,8 @@ namespace ptu_control
         tiltSpeedSetter_ = nodeHandle_.serviceClient<robotnik_msgs::set_float_value>("/flir_ptu_ethernet/set_max_tilt_speed");
         
 
-        ROS_INFO("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+        // ROS_INFO("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+        ROS_INFO("\nPhysical Limits:\n------------------\n%0.2f <= Pan <= %0.2f\n%0.2f <= Tilt <= %0.2f\n0 <= Pan Speed <= %0.2f\n0 <= Tilt Speed <= %0.2f", panMin_, panMax_, tiltMin_, tiltMax_, panSpeedLimit_, tiltSpeedLimit_);
 
         ptu_control::pan_tilt service;
         service.request.pan = jointState_.position[0];
@@ -80,34 +81,42 @@ namespace ptu_control
         double tilt = req.tilt;
         double maxPanSpeed = req.max_pan_speed;
         double maxTiltSpeed = req.max_tilt_speed;
+        bool success = true;
 
         if (pan < panMin_ || pan > panMax_)
         {
             ROS_WARN("Pan angle out of range.\n");
-            ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
-            res.success = false;
-            return false;
+            // ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+            ROS_WARN("%0.2f <= Pan <= %0.2f\n", panMin_, panMax_);
+            success = false;
         }
         else if (tilt < tiltMin_ || tilt > tiltMax_)
         {
             ROS_WARN("Tilt angle out of range.\n");
-            ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
-            res.success = false;
-            return false;
+            // ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+            ROS_WARN("%0.2f <= Tilt <= %0.2f\n", tiltMin_, tiltMax_);
+            success = false;
         }
         else if (maxPanSpeed < 0 || maxPanSpeed > panSpeedLimit_)
         {
-            ROS_WARN("Pan speed out of range.\n");
-            ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
-            res.success = false;
-            return false;
+            ROS_WARN("Pan speed limit out of range.\n");
+            // ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+            ROS_WARN("0 <= Pan Speed <= %0.2f\n", panSpeedLimit_);
+            success = false;
         }
         else if (maxTiltSpeed < 0 || maxTiltSpeed > tiltSpeedLimit_)
         {
             ROS_WARN("Tilt speed limit out of range.\n");
-            ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
-            res.success = false;
-            return false;
+            // ROS_WARN("\nPhysical Limits:\n------------------\n-150 <= Pan <= 150\n-45 <= Tilt <= 30\n0 <= Pan Speed <= 130\n0 <= Tilt Speed <= 30");
+            ROS_WARN("0 <= Tilt Speed <= %0.2f\n", tiltSpeedLimit_);
+            success = false;
+        }
+
+        if (!success)
+        {
+            ROS_ERROR("Could not set movement parameters.");
+            res.success = success;
+            return success;
         }
 
         robotnik_msgs::set_float_value maxPanSpeedMsg;
@@ -115,8 +124,7 @@ namespace ptu_control
 
         robotnik_msgs::set_float_value maxTiltSpeedMsg;
         maxTiltSpeedMsg.request.value = maxTiltSpeed;
-
-        bool success = true;
+        
 
         success &= panSpeedSetter_.call(maxPanSpeedMsg);
         success &= tiltSpeedSetter_.call(maxTiltSpeedMsg);
@@ -124,7 +132,8 @@ namespace ptu_control
         if (!success)
         {
             ROS_ERROR("Failed to set speeds.");
-            return false;
+            res.success = success;
+            return success;
         }
 
         std_msgs::Float64 panMsg;
@@ -138,8 +147,8 @@ namespace ptu_control
 
         ROS_INFO("\nService called\n------------------\nPan: %0.2f, Tilt: %0.2f\nPan Speed; %0.2f, Tilt Speed: %0.2f\n------------------\n", pan, tilt, maxPanSpeed, maxTiltSpeed);
     
-        res.success = true;
-        return true;
+        res.success = success;
+        return success;
     }
 
     void PTUControl::jointStateCallback(const sensor_msgs::JointState::ConstPtr &msg)
