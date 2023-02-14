@@ -20,7 +20,7 @@
 
 	<remap from="joint_states" to="raw_joint_states"/>
 	<include file="$(find flir_ptu_ethernet)/launch/flir_ptu_ethernet.launch">
-		<arg name="ip_address" value="169.254.255.2"/>
+		<arg name="ip_address" value="192.168.50.21"/>
 	</include>
 
 	<include file="$(find spinnaker_camera_driver)/launch/camera.launch">
