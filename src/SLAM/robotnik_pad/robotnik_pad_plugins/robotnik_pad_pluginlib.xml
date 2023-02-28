@@ -1,0 +1,17 @@
+<library path="lib/librobotnik_pad_pluginlib">
+    <class name="robotnik_pad_plugins/Movement" type="pad_plugins::PadPluginMovement" base_class_type="pad_plugins::GenericPadPlugin">
+        <description>This is the Pad movement plugin.</description>
+    </class>
+    <class name="robotnik_pad_plugins/Elevator" type="pad_plugins::PadPluginElevator" base_class_type="pad_plugins::GenericPadPlugin">
+        <description>This is the Pad elevator plugin.</description>
+    </class>
+    <class name="robotnik_pad_plugins/AckermannMovement" type="pad_plugins::PadPluginAckermannMovement" base_class_type="pad_plugins::GenericPadPlugin">
+        <description>This is the Pad movement plugin with ackermann msgs.</description>
+    </class>
+    <class name="robotnik_pad_plugins/Poi" type="pad_plugins::PadPluginPoi" base_class_type="pad_plugins::GenericPadPlugin">
+        <description>This is the Pad POI plugin </description>
+    </class> 
+    <class name="robotnik_pad_plugins/Ptz" type="pad_plugins::PadPluginPtz" base_class_type="pad_plugins::GenericPadPlugin">
+        <description>This is the Pad PTZ plugin.</description>
+    </class>
+</library>
