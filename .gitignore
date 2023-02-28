@@ -3,6 +3,5 @@
 build/
 devel/
 logs/
-src/rqt_mypkg/
 *.pyc
 *.bag
