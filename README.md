@@ -1,15 +1,33 @@
-# PTU-Control
-Files for controlling FLIR Pan Tilt Unit. Tested on Ubuntu 18.04 with ROS Melodic. 
+# TPC Mapping
+This package provdies pan-tilt and camera integration along with the thermal mapping capabilities for the SUMMIT-XL Robot. 
 
-## Installation
+## PTU-Control
+Files for controlling FLIR Pan Tilt Unit with the FLIR A65 Infrared Camera. Tested on Ubuntu 18.04 with ROS Melodic. 
+
+### Installation
 The following dependencies are needed for this node to work:
 
+
+**For the PTU**
 - [flir_ptu_ethernet](https://github.com/RobotnikAutomation/flir_ptu_ethernet)
+    - [robotnik_msgs](https://github.com/RobotnikAutomation/robotnik_msgs/)
+    - [rcomponent](https://github.com/RobotnikAutomation/rcomponent/)
+    - [robotnik_sensors](https://github.com/RobotnikAutomation/robotnik_sensors/)
 - [flir_ptu](https://github.com/ros-drivers/flir_ptu)
+
+**For the Camera**
 - [Spinnaker SDK](https://www.flir.com/products/spinnaker-sdk/)
+- [FLIR_camera](https://github.com/SMART-NYUAD/FLIR_camera/tree/kinetic-devel)
+- [pointgrey_camera_driver](https://github.com/ros-drivers/pointgrey_camera_driver.git) (only image_exposure_msgs, statistics_msgs, and wfov_camera_msgs are specifically needed from this. **Recommended** to delete pointgrey_camera_description and driver to prevent errors)
 
+**IP Addresses**
 
-## Usage: 
+Make sure that the network is setup with a subnet mask of **255.255.255.0** with a network IP of **192.168.50.0**
+
+- **PTU: 192.168.50.21**
+- **FLIR Camera: 192.168.50.22**
+
+### Usage: 
 
 To launch with both the pan tilt and camera nodes: 
 ```
