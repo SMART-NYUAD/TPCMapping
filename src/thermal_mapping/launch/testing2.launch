@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="launch_rviz" default="true"/>
+    <arg name="file_rviz" default="summitxl_testing2"/>
+
+
+    <remap from="/robot/front_rgbd_camera/rgb/image_raw" to="/camera/color/image_raw"/> 
+    <remap from="/robot/ouster/points" to="/velodyne_points"/>
+    <include file="$(find summit_xl_sim_bringup)/launch/summit_xl_complete.launch">
+        <arg name="launch_rviz" value="false"/>
+	    <arg name="gazebo_world" value="$(find summit_xl_gazebo)/worlds/summit_xl_office.world"/> 
+    </include>
+
+    <node if="$(arg launch_rviz)" name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find summit_xl_gazebo)/rviz/$(arg file_rviz).rviz"/>
+
+    <!-- <node pkg="tf" type="static_transform_publisher" name="robot_odom_dummy" args="0 0 0 0 0 0 robot_odom odom_dummy 10"/>
+    <node pkg="tf" type="static_transform_publisher" name="robot_laser_dummy" args="0 0 0 0 0 0 robot_laser_base_link laser_dummy 10"/> -->
+    
+
+     <!-- <include file="$(find hdl_graph_slam)/launch/hdl_graph_slam.launch">
+        <arg name="map_frame_id" value="map"/>
+        <arg name="lidar_odom_frame_id" value = "odom"/>
+        <arg name="robot_odom_frame_id" value = "lidar_odom"/>
+    </include> -->
+
+
+    <!-- <node pkg="tf" type="static_transform_publisher" name="odom_to_robot_odom" args="0 0 0 0 0 0 odom robot_odom 10"/> -->
+    <include file="$(find hdl_graph_slam)/launch/hdl_graph_slam.launch">
+        <arg name="points_topic" value="/velodyne_points" />
+        <arg name="map_frame_id" value="robot_map" />
+        <arg name="lidar_odom_frame_id" value="robot_odom" />
+        <arg name="robot_odom_frame_id" value="robot_front_laser_base_link" />
+    </include>
+
+   
+   <include file="$(find lidar_camera_fusion)/launch/vlp16OnImg.launch"/>
+
+</launch>
+

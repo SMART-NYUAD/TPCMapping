@@ -363,7 +363,7 @@ void callback(const boost::shared_ptr<const sensor_msgs::PointCloud2>& in_pc2 , 
     pc_color->is_dense = true;
     pc_color->width = (int) pc_color->points.size();
     pc_color->height = 1;
-    pc_color->header.frame_id = "robot_laser_base_link";
+    pc_color->header.frame_id = "robot_front_laser_base_link";
 
   pcOnimg_pub.publish(cv_ptr->toImageMsg());
   pc_pub.publish (pc_color);
