@@ -7,7 +7,7 @@
 	<arg name="launch_rviz" default="false"/>
 	<arg name="world" default="$(find summit_xl_gazebo)/worlds/summit_xl.world"/>
 	<!-- located in summit_xl_gazebo/worlds -->
-	<arg name="file_rviz" default="summitxl_testing"/>
+	<arg name="file_rviz" default="summitxl_a"/>
 	<!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
 	<include file="$(find gazebo_ros)/launch/empty_world.launch">
 		<arg name="world_name" value="$(arg world)"/>

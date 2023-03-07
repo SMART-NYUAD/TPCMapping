@@ -104,7 +104,7 @@
 			<origin xyz="-0.22 0 0.275" rpy="0 0 0"/>
 		</xacro:sensor_gps_with_mast>
 	  <!-- LiDAR -->
-	  <xacro:sensor_ouster1_64 prefix="$(arg prefix)ouster" parent="$(arg prefix)base_link" prefix_topic="ouster" gpu="$(arg gpu)" hsamples='1028' fps='30'>
+	  <xacro:sensor_ouster1_64 prefix="$(arg prefix)ouster" parent="$(arg prefix)base_link" prefix_topic="ouster" gpu="$(arg gpu)" hsamples='512' fps='30'>
 			<origin xyz="0.0 0.0 0.3" rpy="0 0 0"/>
 	  </xacro:sensor_ouster1_64>
    </xacro:macro>

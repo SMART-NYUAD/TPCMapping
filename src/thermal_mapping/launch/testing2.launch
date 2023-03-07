@@ -25,15 +25,15 @@
 
 
     <!-- <node pkg="tf" type="static_transform_publisher" name="odom_to_robot_odom" args="0 0 0 0 0 0 odom robot_odom 10"/> -->
+
+    <include file="$(find lidar_camera_fusion)/launch/vlp16OnImg.launch"/>
+    
     <include file="$(find hdl_graph_slam)/launch/hdl_graph_slam.launch">
-        <arg name="points_topic" value="/velodyne_points" />
+        <arg name="points_topic" value="/points2" />
         <arg name="map_frame_id" value="robot_map" />
         <arg name="lidar_odom_frame_id" value="robot_odom" />
         <arg name="robot_odom_frame_id" value="robot_front_laser_base_link" />
     </include>
-
-   
-   <include file="$(find lidar_camera_fusion)/launch/vlp16OnImg.launch"/>
 
 </launch>
 

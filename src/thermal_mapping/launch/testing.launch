@@ -19,7 +19,8 @@
     <remap from="/robot/front_rgbd_camera/rgb/image_raw" to="/camera/color/image_raw"/>
     <remap from="/robot/ouster/points" to="/velodyne_points"/>
     <include file="$(find summit_xl_gazebo)/launch/summit_xl_gazebo.launch">
-        <arg name="gazebo_world" default="$(find summit_xl_gazebo)/worlds/demo.world"/>
+        <arg name="launch_rviz" value="false"/>
+        <arg name="gazebo_world" value="$(find summit_xl_gazebo)/worlds/demo.world"/>
         <!-- general args -->
         <arg name="default_xacro" value="$(arg default_xacro)"/>
         <arg name="omni_drive" value="$(arg omni_drive)"/>
@@ -39,5 +40,7 @@
     </include>
 
     <include file="$(find lidar_camera_fusion)/launch/vlp16OnImg.launch"/>
+
+    <node if="$(arg launch_rviz)" name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find summit_xl_gazebo)/rviz/$(arg file_rviz).rviz"/>
 
 </launch>
