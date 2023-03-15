@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
     <arg name="launch_rviz" default="true"/>
-    <arg name="file_rviz" default="summitxl_testing"/>
+    <arg name="file_rviz" default="testing1"/>
 
     <arg name="gazebo_world" default="$(find summit_xl_gazebo)/worlds/summit_xl_office.world"/>
 	<arg name="default_xacro" default="summit_xl_std.urdf.xacro"/>
@@ -16,6 +16,7 @@
 	<arg name="launch_robot_a" default="true"/>
 	<arg name="xacro_robot_a" default="$(arg default_xacro)"/>
 
+    <!-- Remapping needed for lidar_camera_fusion -->
     <remap from="/robot/front_rgbd_camera/rgb/image_raw" to="/camera/color/image_raw"/>
     <remap from="/robot/ouster/points" to="/velodyne_points"/>
     <include file="$(find summit_xl_gazebo)/launch/summit_xl_gazebo.launch">
@@ -41,6 +42,6 @@
 
     <include file="$(find lidar_camera_fusion)/launch/vlp16OnImg.launch"/>
 
-    <node if="$(arg launch_rviz)" name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find summit_xl_gazebo)/rviz/$(arg file_rviz).rviz"/>
+    <node if="$(arg launch_rviz)" name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find thermal_mapping)/rviz/$(arg file_rviz).rviz"/>
 
 </launch>
