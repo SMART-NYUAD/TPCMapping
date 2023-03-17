@@ -1,3 +1,4 @@
+<!-- Testing Rtabmap -->
 <?xml version="1.0"?>
 <launch>
     <arg name="launch_rviz" default="true"/>

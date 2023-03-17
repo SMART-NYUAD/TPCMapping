@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <launch>
+<!-- testing with gmapping -->
     <arg name="launch_rviz" default="true"/>
     <arg name="file_rviz" default="summitxl_testing2"/>
 

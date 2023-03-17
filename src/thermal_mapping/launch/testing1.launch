@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <launch>
+<!-- Testing lidar_camera_fusion + hdl_graph_slam -->
     <arg name="launch_rviz" default="true"/>
     <arg name="file_rviz" default="testing1"/>
 
