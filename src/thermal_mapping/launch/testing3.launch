@@ -1,6 +1,6 @@
-<!-- Testing Rtabmap -->
 <?xml version="1.0"?>
 <launch>
+<!-- Testing Rtabmap -->
     <arg name="launch_rviz" default="true"/>
     <arg name="file_rviz" default="testing3"/>
 

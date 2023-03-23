@@ -1,0 +1,1576 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='checkerboard_8_8_0_1'>
+    <link name='checkerboard_8_8_0_1_body'>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <gravity>1</gravity>
+      <inertial>
+        <mass>1</mass>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='checker_0_0'>
+        <pose frame=''>-0.35 -0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_0_0_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_0_2'>
+        <pose frame=''>-0.35 -0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_0_2_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_0_1'>
+        <pose frame=''>-0.35 -0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_0_1_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_0_3'>
+        <pose frame=''>-0.35 -0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_0_3_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_0_4'>
+        <pose frame=''>-0.35 0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_0_4_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_0_5'>
+        <pose frame=''>-0.35 0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_0_5_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_0_6'>
+        <pose frame=''>-0.35 0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_0_6_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_0_7'>
+        <pose frame=''>-0.35 0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_0_7_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_1_0'>
+        <pose frame=''>-0.25 -0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_1_0_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_1_1'>
+        <pose frame=''>-0.25 -0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_1_1_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_1_2'>
+        <pose frame=''>-0.25 -0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_1_2_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_1_3'>
+        <pose frame=''>-0.25 -0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_1_3_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_1_4'>
+        <pose frame=''>-0.25 0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_1_4_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_1_5'>
+        <pose frame=''>-0.25 0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_1_5_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_1_6'>
+        <pose frame=''>-0.25 0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_1_6_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_1_7'>
+        <pose frame=''>-0.25 0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_1_7_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_2_1'>
+        <pose frame=''>-0.15 -0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_2_1_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_2_0'>
+        <pose frame=''>-0.15 -0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_2_0_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_2_2'>
+        <pose frame=''>-0.15 -0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_2_2_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_2_3'>
+        <pose frame=''>-0.15 -0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_2_3_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_2_4'>
+        <pose frame=''>-0.15 0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_2_4_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_2_5'>
+        <pose frame=''>-0.15 0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_2_5_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_2_6'>
+        <pose frame=''>-0.15 0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_2_6_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_2_7'>
+        <pose frame=''>-0.15 0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_2_7_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_3_0'>
+        <pose frame=''>-0.05 -0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_3_0_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_3_1'>
+        <pose frame=''>-0.05 -0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_3_1_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_3_2'>
+        <pose frame=''>-0.05 -0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_3_2_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_3_3'>
+        <pose frame=''>-0.05 -0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_3_3_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_3_4'>
+        <pose frame=''>-0.05 0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_3_4_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_3_5'>
+        <pose frame=''>-0.05 0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_3_5_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_3_6'>
+        <pose frame=''>-0.05 0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_3_6_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_3_7'>
+        <pose frame=''>-0.05 0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_3_7_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_4_0'>
+        <pose frame=''>0.05 -0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_4_0_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_4_1'>
+        <pose frame=''>0.05 -0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_4_1_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_4_2'>
+        <pose frame=''>0.05 -0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_4_2_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_4_3'>
+        <pose frame=''>0.05 -0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_4_3_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_4_4'>
+        <pose frame=''>0.05 0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_4_4_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_4_5'>
+        <pose frame=''>0.05 0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_4_5_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_4_6'>
+        <pose frame=''>0.05 0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_4_6_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_4_7'>
+        <pose frame=''>0.05 0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_4_7_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_5_0'>
+        <pose frame=''>0.15 -0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_5_0_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_5_1'>
+        <pose frame=''>0.15 -0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_5_1_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_5_2'>
+        <pose frame=''>0.15 -0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_5_2_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_5_3'>
+        <pose frame=''>0.15 -0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_5_3_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_5_4'>
+        <pose frame=''>0.15 0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_5_4_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_5_5'>
+        <pose frame=''>0.15 0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_5_5_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_5_6'>
+        <pose frame=''>0.15 0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_5_6_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_5_7'>
+        <pose frame=''>0.15 0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_5_7_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_6_0'>
+        <pose frame=''>0.25 -0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_6_0_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_6_1'>
+        <pose frame=''>0.25 -0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_6_1_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_6_2'>
+        <pose frame=''>0.25 -0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_6_2_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_6_3'>
+        <pose frame=''>0.25 -0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_6_3_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_6_4'>
+        <pose frame=''>0.25 0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_6_4_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_6_5'>
+        <pose frame=''>0.25 0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_6_5_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_6_6'>
+        <pose frame=''>0.25 0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_6_6_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_6_7'>
+        <pose frame=''>0.25 0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_6_7_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_7_0'>
+        <pose frame=''>0.35 -0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_7_0_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_7_1'>
+        <pose frame=''>0.35 -0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_7_1_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_7_2'>
+        <pose frame=''>0.35 -0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_7_2_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_7_3'>
+        <pose frame=''>0.35 -0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_7_3_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_7_4'>
+        <pose frame=''>0.35 0.05 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_7_4_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_7_5'>
+        <pose frame=''>0.35 0.15 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_7_5_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_7_6'>
+        <pose frame=''>0.35 0.25 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_7_6_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_7_7'>
+        <pose frame=''>0.35 0.35 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_7_7_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='checker_backdrop'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1 1 0.0001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <script>
+            <name>ModelPreview_1::checkerboard_8_8_0_1_body::checker_backdrop_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='collision_1'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1 1 0.01</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+            <torsional>
+              <coefficient>1</coefficient>
+              <patch_radius>0</patch_radius>
+              <surface_radius>0</surface_radius>
+              <use_patch_radius>1</use_patch_radius>
+              <ode>
+                <slip>0</slip>
+              </ode>
+            </torsional>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>1e+06</threshold>
+          </bounce>
+          <contact>
+            <collide_without_contact>0</collide_without_contact>
+            <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+            <collide_bitmask>1</collide_bitmask>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+              <max_vel>0.01</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+            <bullet>
+              <split_impulse>1</split_impulse>
+              <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.2</soft_erp>
+              <kp>1e+13</kp>
+              <kd>1</kd>
+            </bullet>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>

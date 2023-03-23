@@ -32,8 +32,8 @@
     <include file="$(find hdl_graph_slam)/launch/hdl_graph_slam.launch">
         <arg name="points_topic" value="/points2" />
         <arg name="map_frame_id" value="robot_map" />
-        <arg name="lidar_odom_frame_id" value="robot_odom" />
-        <arg name="robot_odom_frame_id" value="robot_front_laser_base_link" />
+        <arg name="lidar_odom_frame_id" value="robot_front_laser_base_link" />
+        <arg name="robot_odom_frame_id" value="robot_odom" />
     </include>
 
 </launch>
