@@ -1,0 +1,7 @@
+[submodule "src/SLAM/octomap_mapping"]
+	path = src/SLAM/octomap_mapping
+	url = https://github.com/OctoMap/octomap_mapping.git
+[submodule "src/SLAM/octomap_ros"]
+	path = src/SLAM/octomap_ros
+	url = https://github.com/OctoMap/octomap_ros
+	branch = melodic-devel
