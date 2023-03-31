@@ -5,3 +5,10 @@
 	path = src/SLAM/octomap_ros
 	url = https://github.com/OctoMap/octomap_ros
 	branch = melodic-devel
+[submodule "src/SLAM/hdl_dependencies/ndt_omp"]
+	path = src/SLAM/hdl_dependencies/ndt_omp
+	url = https://github.com/koide3/ndt_omp.git
+	branch=melodic
+[submodule "src/SLAM/hdl_dependencies/fast_gicp"]
+	path = src/SLAM/hdl_dependencies/fast_gicp
+	url = https://github.com/SMRT-AIST/fast_gicp.git
