@@ -1,3 +1,14 @@
 <?xml version="1.0"?>
 <launch>
+    <arg name="file_rviz" default="testing1"/>
+
+    <include file="$(find hdl_graph_slam)/launch/hdl_graph_slam.launch">
+        <arg name="points_topic" value="/robot/os_cloud_node/points" />
+        <arg name="map_frame_id" value="map" />
+        <arg name="lidar_odom_frame_id" value="odom" />
+        <arg name="robot_odom_frame_id" value="robot_odom" />
+    </include>
+    
+    <node name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find thermal_mapping)/rviz/$(arg file_rviz).rviz"/>
+
 </launch>

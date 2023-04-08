@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="launch_rviz" default="true"/>
+    <arg name="file_rviz" default="gmapping"/>
+
+    <arg name="gazebo_world" default="$(find thermal_mapping)/worlds/final.world"/>
+	<arg name="default_xacro" default="summit_xl_std.urdf.xacro"/>
+
+    <include file="$(find summit_xl_gazebo)/launch/summit_xl_gazebo.launch">
+        <arg name="launch_rviz" value="false"/>
+        <arg name="gazebo_world" value="$(arg gazebo_world)"/>
+    </include>
+
+    <node if="$(arg launch_rviz)" name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find thermal_mapping)/rviz/$(arg file_rviz).rviz" output="log"/>
+
+    <node name="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" pkg="pointcloud_to_laserscan" output="log">
+        <remap from="/cloud_in" to="/robot/ouster/points"/>
+    </node>
+
+    <node name="gmapping" pkg="gmapping" type="slam_gmapping" output="log">
+        <param name="odom_frame" value="robot_odom"/>
+        <param name="base_frame" value="robot_base_footprint"/>
+    </node>
+</launch>
