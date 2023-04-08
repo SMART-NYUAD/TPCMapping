@@ -12,3 +12,9 @@
 [submodule "src/SLAM/hdl_dependencies/fast_gicp"]
 	path = src/SLAM/hdl_dependencies/fast_gicp
 	url = https://github.com/SMRT-AIST/fast_gicp.git
+[submodule "src/SLAM/hdl_dependencies/geographic_info"]
+	path = src/SLAM/hdl_dependencies/geographic_info
+	url = https://github.com/ros-geographic-info/geographic_info.git
+[submodule "src/SLAM/pointcloud_to_laserscan"]
+	path = src/SLAM/pointcloud_to_laserscan
+	url = https://github.com/ros-perception/pointcloud_to_laserscan.git
