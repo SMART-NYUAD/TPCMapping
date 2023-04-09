@@ -4,8 +4,8 @@
     <arg name="file_rviz" default="gmapping"/>
 
     <arg name="gazebo_world" default="$(find thermal_mapping)/worlds/final.world"/>
-	<arg name="default_xacro" default="summit_xl_std.urdf.xacro"/>
-
+    <!-- <arg name="gazebo_world" default="$(find summit_xl_gazebo)/worlds/summit_xl_office.world"/> -->
+    
     <include file="$(find summit_xl_gazebo)/launch/summit_xl_gazebo.launch">
         <arg name="launch_rviz" value="false"/>
         <arg name="gazebo_world" value="$(arg gazebo_world)"/>

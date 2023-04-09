@@ -22,3 +22,4 @@
 [submodule "src/data_fusion/velodyne"]
 	path = src/data_fusion/velodyne
 	url = https://github.com/ros-drivers/velodyne.git
+	branch=melodic-devel
