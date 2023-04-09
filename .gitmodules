@@ -19,3 +19,6 @@
 	path = src/SLAM/pointcloud_to_laserscan
 	url = https://github.com/ros-perception/pointcloud_to_laserscan.git
 	branch=lunar-devel
+[submodule "src/data_fusion/velodyne"]
+	path = src/data_fusion/velodyne
+	url = https://github.com/ros-drivers/velodyne.git
