@@ -13,7 +13,6 @@ Panels:
         - /RGB_map1/PointCloud22
         - /RGB_map1/PointCloud23
         - /Input image1
-        - /Input image1/Status1
       Splitter Ratio: 0.4651159942150116
     Tree Height: 220
   - Class: rviz/Selection
@@ -49,7 +48,7 @@ Panels:
     Splitter Ratio: 0.5
   - Class: teleop_panel/Teleop
     CmdVelTopic: /robot/cmd_vel
-    EStopTopic: /robot/cmd_vel
+    EStopTopic: /robot/robotnik_base_control/emergency_stop
     Name: Teleop
 Preferences:
   PromptSaveOnExit: true
