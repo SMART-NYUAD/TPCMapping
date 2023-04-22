@@ -23,3 +23,6 @@
 	path = src/data_fusion/velodyne
 	url = https://github.com/ros-drivers/velodyne.git
 	branch=melodic-devel
+[submodule "src/ouster-ros"]
+	path = src/ouster-ros
+	url = https://github.com/ouster-lidar/ouster-ros.git
