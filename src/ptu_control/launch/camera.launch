@@ -1,7 +1,7 @@
 <launch>
 	<arg name="camera_name"               default="camera" />
 	<arg name="camera_serial"             default="75003539" />
-	<arg name="calibrated"                default="true" />
+	<arg name="calibrated"                default="false" />
 	<arg name="device_type"               default="GiGE" /> <!-- USB3 or GigE -->
 
 	<!-- When unspecified, the driver will use the default framerate as given by the
@@ -13,7 +13,7 @@
 	<!-- Disabling ISP will dramatically increase frame-rate. However, it can only be 
 		disabled when using Bayer encoding (e.g. BayerRG8)-->
 	<arg name="isp_enable"                default="False" /> 
-	<arg name="encoding"                  default="BayerBG16" />
+	<arg name="encoding"                  default="BayerRG8" />
 	<arg name="color_balance"             default="Continuous" /> <!-- Off, Once, or Continuous -->
 	<!-- Available Encodings:
 		Mono:              YUV:              YCbCr:          Other:
@@ -38,10 +38,10 @@
 	<group ns="$(arg camera_name)">
 	<!-- Nodelet manager -->
 
-	<node pkg="nodelet" type="nodelet" name="camera_nodelet_manager" args="manager" cwd="node" output="screen"/>
+	<node pkg="nodelet" type="nodelet" name="flir_camera_nodelet_manager" args="manager" cwd="node" output="screen"/>
 	<!-- Camera nodelet -->
 	<node pkg="nodelet" type="nodelet" name="spinnaker_camera_nodelet"
-			args="load spinnaker_camera_driver/SpinnakerCameraNodelet camera_nodelet_manager" >
+			args="load spinnaker_camera_driver/SpinnakerCameraNodelet flir_camera_nodelet_manager" >
 
 		<param name="frame_id"                        value="$(arg camera_name)" />
 		<param name="serial"                          value="$(arg camera_serial)" />
@@ -81,10 +81,10 @@
 	</node>
 
 	<!-- Debayering nodelet -->
-	<node pkg="nodelet" type="nodelet" name="image_proc_debayer"
-			args="load image_proc/debayer camera_nodelet_manager">
+	<node pkg="nodelet" type="nodelet" name="flir_image_proc_debayer"
+			args="load image_proc/debayer flir_camera_nodelet_manager">
 	</node>
 	</group>
 
-	<node name="GUI" pkg="rqt_gui" type="rqt_gui" output="screen" args="--perspective-file $(find ptu_control)/rqt/camera.perspective"/>
+	<node name="FLIR_GUI" pkg="rqt_gui" type="rqt_gui" output="screen" args="--perspective-file $(find ptu_control)/rqt/camera.perspective"/>
 </launch>
