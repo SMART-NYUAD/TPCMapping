@@ -4,12 +4,12 @@
     <arg name="launch_rviz" default="true"/>
     <arg name="file_rviz" default="r3live"/>
 
-    <arg name="gazebo_world" default="$(find thermal_mapping)/worlds/final.world"/>
+    <!-- <arg name="gazebo_world" default="$(find thermal_mapping)/worlds/final2.world"/> -->
 	<arg name="default_xacro" default="summit_xl_std.urdf.xacro"/>
 
     <include file="$(find summit_xl_sim_bringup)/launch/summit_xl_complete.launch">
         <arg name="launch_rviz" value="true"/>
-	    <!-- <arg name="gazebo_world" value="$(arg gazebo_world)"/>  -->
+	    <arg name="gazebo_world" value="$(arg gazebo_world)"/> 
     </include>
 
     <node if="$(arg launch_rviz)" name="rviz_r3live" pkg="rviz" type="rviz" required="true" args="-d $(find thermal_mapping)/rviz/$(arg file_rviz).rviz" output="log"/>

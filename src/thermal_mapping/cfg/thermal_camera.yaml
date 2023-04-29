@@ -19,8 +19,8 @@ r3live_vio:
    image_width: 640
    image_height: 512
    camera_intrinsic:
-      [863.4241, 0.0, 640.6808,
-      0.0,  863.4171, 518.3392,
+      [1545, 0.0, 350,
+      0.0,  1545, 332,
       0.0, 0.0, 1.0 ] 
    camera_dist_coeffs: [-0.1080, 0.1050, -1.2872e-04, 5.7923e-05, -0.0222]  #k1, k2, p1, p2, k3
    # Fine extrinsic value. form camera-LiDAR calibration.
@@ -31,10 +31,10 @@ r3live_vio:
    # camera_ext_t: [0.050166, 0.0474116, -0.0312415] 
    # Rough extrinsic value, form CAD model, is not correct enough, but can be online calibrated in our datasets.
    camera_ext_R:
-      [0, 0, 1,
-       -1, 0, 0,
-       0, -1, 0]
-   camera_ext_t: [0,0,0] 
+      [0.1376, 2.1089, -3.072,
+       4.705, 2.6378, 1.598,
+       0.0004109, 0.0078459, 0.005856]
+   camera_ext_t: [2.355, 3.025, 0.01] 
    
 r3live_lio:        
    lio_update_point_step: 4   # Point step used for LIO update.  

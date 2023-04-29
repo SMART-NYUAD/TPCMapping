@@ -26,3 +26,6 @@
 [submodule "src/ouster-ros"]
 	path = src/ouster-ros
 	url = https://github.com/ouster-lidar/ouster-ros.git
+[submodule "src/data_fusion/r3live"]
+	path = src/data_fusion/r3live
+	url = https://github.com/hku-mars/r3live.git
