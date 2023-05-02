@@ -4,7 +4,7 @@
     <arg name="launch_rviz" default="true"/>
     <arg name="file_rviz" default="r3live"/>
 
-    <!-- <arg name="gazebo_world" default="$(find thermal_mapping)/worlds/final2.world"/> -->
+    <arg name="gazebo_world" default="$(find thermal_mapping)/worlds/final1.world"/>
 	<arg name="default_xacro" default="summit_xl_std.urdf.xacro"/>
 
     <include file="$(find summit_xl_sim_bringup)/launch/summit_xl_complete.launch">

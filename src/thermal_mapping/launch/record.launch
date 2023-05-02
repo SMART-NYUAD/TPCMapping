@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="launch_rviz" default="true"/>
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- Launch Ouster OS1 Driver -->
+    <include file="$(find ouster_ros)/launch/sensor.launch">
+        <arg name="viz" value="false"/>
+        <arg name="ouster_ns" value="ouster"/>
+        <arg name="sensor_hostname" value="os-122138000087.local"/>
+        <arg name="lidar_mode" value="1024x10"/>
+    </include>
+
+    <!-- Launch FLIR Camera Driver -->
+    <include file="$(find ptu_control)/launch/camera.launch">
+        <arg name="rviz" value="false"/>
+    </include>
+    <node if="$(arg launch_rviz)" name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find thermal_mapping)/rviz/tpc.rviz"/>
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+    <node pkg="thermal_mapping" name="timestamp_synchronizer" type="timestamp_synchronizer.py" output="screen" launch-prefix="xterm -e"/>
+</launch>

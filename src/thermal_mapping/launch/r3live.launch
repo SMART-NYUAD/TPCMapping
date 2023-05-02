@@ -4,9 +4,11 @@
     <arg name="launch_rviz" default="true"/>
     <arg name="file_rviz" default="r3live"/>
 
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     <arg name="gazebo_world" default="$(find thermal_mapping)/worlds/final.world"/>
     <!-- <arg name="gazebo_world" default="$(find summit_xl_gazebo)/worlds/summit_xl_office.world"/> -->
     
+    <remap from="/robot/front_rgbd_camera/rgb/image_raw" to="/camera/image_raw"/>
     <include file="$(find summit_xl_gazebo)/launch/summit_xl_gazebo.launch">
         <arg name="launch_rviz" value="false"/>
         <arg name="gazebo_world" value="$(arg gazebo_world)"/>
@@ -14,12 +16,13 @@
 
     <node if="$(arg launch_rviz)" name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find thermal_mapping)/rviz/$(arg file_rviz).rviz"/>
 
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     <!-- R3live -->
     <remap from="/os_cloud_node/points" to="/robot/ouster/points"/>
     <param name="/LiDAR_pointcloud_topic" type="string" value= "/laser_cloud_flat" />
     <param name="/IMU_topic" type="string" value= "/robot/imu/data_raw" />
     <!-- <param name="/Image_topic" type="string" value= "/NotAvail" /> -->
-    <param name="Image_topic" type="string" value= "/robot/robot_front_ptz_camera/image_raw"/>
+    <param name="Image_topic" type="string" value= "/camera/image_raw"/>
     <!-- <param name="Image_topic" type="string" value="/robot/front_rgbd_camera/rgb/image_raw"/> -->
     <param name="map_output_dir" type="string" value="$(env HOME)/r3live_output" />
     <rosparam command="load" file="$(find thermal_mapping)/cfg/r3live_config.yaml" />
