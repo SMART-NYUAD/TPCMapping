@@ -29,3 +29,6 @@
 [submodule "src/data_fusion/r3live"]
 	path = src/data_fusion/r3live
 	url = https://github.com/hku-mars/r3live.git
+[submodule "src/cameraPTUDependencies/FLIR-Thermal-Camera-ROS"]
+	path = src/cameraPTUDependencies/FLIR-Thermal-Camera-ROS
+	url = https://github.com/GCaptainNemo/FLIR-Thermal-Camera-ROS.git
