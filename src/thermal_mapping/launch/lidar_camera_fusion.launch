@@ -3,7 +3,7 @@
     <arg name="launch_rviz" default="true"/>
     <arg name="file_rviz" default="lcf"/>
 
-    <arg name="gazebo_world" default="$(find thermal_mapping)/worlds/final.world"/>
+    <arg name="gazebo_world" default="$(find thermal_mapping)/worlds/testing.world"/>
 
     <include file="$(find summit_xl_gazebo)/launch/summit_xl_gazebo.launch">
         <arg name="launch_rviz" value="false"/>
