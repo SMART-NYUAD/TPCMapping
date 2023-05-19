@@ -61,5 +61,3 @@ def compressed_img_callback(msg):
 
 if __name__=="__main__":
     timestamp_synchronizer()
-
-    # rosbag record -O record /thermal/image_raw_sync /thermal/image_raw_sync/compressed /robot/imu/data_raw /robot/ouster/points
