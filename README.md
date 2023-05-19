@@ -24,8 +24,8 @@ The following dependencies are needed for this node to work:
 
 Make sure that the network is setup with a subnet mask of **255.255.255.0** with a network IP of **192.168.50.0**
 
-- **PTU: 192.168.50.21**
-- **FLIR Camera: 192.168.50.22**
+- **PTU: 192.168.0.21**
+- **FLIR Camera: 192.168.0.22**
 
 ### Usage: 
 
